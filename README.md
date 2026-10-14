@@ -1,4 +1,4 @@
-[Uploading readme.md…]()
+[readme.md](https://github.com/user-attachments/files/33436935/readme.md)
 # SZU-Campus-AutoLogin | 深圳大学校园网开机自动认证工具
 
 一个轻量、零延迟、开机即用的深圳大学宿舍区校园网（Dr.COM / ePortal `172.30.255.42`）Windows 自动认证脚本，支持智能网络识别（插网线自动登录、在家连 Wi-Fi 自动退出）。
@@ -47,23 +47,18 @@
 
 以后每次开机插着网线进入桌面，电脑都会在后台自动完成认证！
 
-🛠️ 常见问题
+## 🛠️ 常见问题
 
-Q1: 以后修改了校园网密码怎么办？
-
+### Q1: 以后修改了校园网密码怎么办？
 你可以随时通过以下两种方式之一修改密码：
+1. 重新修改下载的 `.bat` 文件顶部密码并运行一次；
+2. 或者直接打开 `C:\Users\Public\SZU_AutoLogin_Only\szu_autologin.ps1`（右键记事本编辑），修改里面的密码保存即可。
 
-重新修改下载的 .bat 文件顶部密码并运行一次；
-
-或者直接打开 C:\Users\Public\SZU_AutoLogin_Only\szu_autologin.ps1（右键记事本编辑），修改里面的密码保存即可。
-
-Q2: 为什么开机后浏览器还是弹出了校园网登录页？
-
+### Q2: 为什么开机后浏览器还是弹出了校园网登录页？
 这是 Windows 系统的 NCSI（网络连接状态探测）机制在刚插网线时触发的。无需担心，脚本通常会在 2~5 秒内自动完成认证，直接关闭该网页即可正常上网。
 
-Q3: 如何彻底卸载本工具？
-
-若毕业离校不再需要自动登录，按 Win + R 输入 taskschd.msc 打开“任务计划程序”，找到 SZU_Campus_AutoLogin_Only 右键删除，并清空 shell:startup 启动目录下的相关文件即可。
+### Q3: 如何彻底卸载本工具？
+若毕业离校不再需要自动登录，按 `Win + R` 输入 `taskschd.msc` 打开“任务计划程序”，找到 `SZU_Campus_AutoLogin_Only` 右键删除，并清空 `shell:startup` 启动目录下的相关文件即可。
 
 ## 📄 开源许可
 
