@@ -47,27 +47,23 @@
 
 以后每次开机插着网线进入桌面，电脑都会在后台自动完成认证！
 
-## 🛠️ 常见问题
+🛠️ 常见问题
 
-&lt;details&gt;
-&lt;summary&gt;&lt;b&gt;Q1: 以后修改了校园网密码怎么办？&lt;/b&gt;&lt;/summary&gt;
+Q1: 以后修改了校园网密码怎么办？
 
 你可以随时通过以下两种方式之一修改密码：
-1. 重新修改下载的 `.bat` 文件顶部密码并运行一次；
-2. 或者直接打开 `C:\Users\Public\SZU_AutoLogin_Only\szu_autologin.ps1`（右键记事本编辑），修改里面的密码保存即可。
-&lt;/details&gt;
 
-&lt;details&gt;
-&lt;summary&gt;&lt;b&gt;Q2: 为什么开机后浏览器还是弹出了校园网登录页？&lt;/b&gt;&lt;/summary&gt;
+重新修改下载的 .bat 文件顶部密码并运行一次；
+
+或者直接打开 C:\Users\Public\SZU_AutoLogin_Only\szu_autologin.ps1（右键记事本编辑），修改里面的密码保存即可。
+
+Q2: 为什么开机后浏览器还是弹出了校园网登录页？
 
 这是 Windows 系统的 NCSI（网络连接状态探测）机制在刚插网线时触发的。无需担心，脚本通常会在 2~5 秒内自动完成认证，直接关闭该网页即可正常上网。
-&lt;/details&gt;
 
-&lt;details&gt;
-&lt;summary&gt;&lt;b&gt;Q3: 如何彻底卸载本工具？&lt;/b&gt;&lt;/summary&gt;
+Q3: 如何彻底卸载本工具？
 
-若毕业离校不再需要自动登录，按 `Win + R` 输入 `taskschd.msc` 打开“任务计划程序”，找到 `SZU_Campus_AutoLogin_Only` 右键删除，并清空 `shell:startup` 启动目录下的相关文件即可。
-&lt;/details&gt;
+若毕业离校不再需要自动登录，按 Win + R 输入 taskschd.msc 打开“任务计划程序”，找到 SZU_Campus_AutoLogin_Only 右键删除，并清空 shell:startup 启动目录下的相关文件即可。
 
 ## 📄 开源许可
 
